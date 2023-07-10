@@ -38,14 +38,14 @@ export const handleMedicineDelete = (id) => {
 
 export const getMedicineById = (id) => {
   return myAxios
-    .get(`http://localhost:8080/api/medicine/getMedicineById/${id}`)
+    .get(`http://13.50.215.124:8989/api/medicine/getMedicineById/${id}`)
     .then((respo) => respo.data);
 };
 
 export const updateMedicine = (medicine, medicineId) => {
   return privateAxios
     .put(
-      `http://localhost:8080/api/medicine/updateMedicine/${medicineId}`,
+      `http://13.50.215.124:8989/api/medicine/updateMedicine/${medicineId}`,
       medicine
     )
     .then((resp) => resp.data);
@@ -53,18 +53,18 @@ export const updateMedicine = (medicine, medicineId) => {
 
 export const updateOrderByAdmin = (id) => {
   return privateAxios
-    .put(`http://localhost:8080/api/orders/updateOrderByAdmin/${id}`)
+    .put(`http://13.50.215.124:8989/api/orders/updateOrderByAdmin/${id}`)
     .then((resp) => resp.data);
 };
 
 export const updateCancelOrderByAdmin = (id, mId) => {
   return privateAxios
     .put(
-      `http://localhost:8080/api/orders/updateOrderByAdminCancel/${id}/admin/${mId}`
+      `http://13.50.215.124:8989/api/orders/updateOrderByAdminCancel/${id}/admin/${mId}`
     )
     .then((resp) => resp.data);
 };
 
 export const getImageFile = (imageName) => {
-  return myAxios.get(`http://localhost:8080/api/orders/${imageName}`);
+  return myAxios.get(`http://13.50.215.124:8989/api/orders/${imageName}`);
 };
