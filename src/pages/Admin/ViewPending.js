@@ -81,7 +81,7 @@ const ViewPending = () => {
                       <td>
                         <a
                           target="_blank"
-                          href={`http://localhost:8080/api/orders/${data.prescription}`}
+                          href={`http://13.50.215.124:8989/api/orders/${data.prescription}`}
                         >
                           See Prescription
                         </a>
