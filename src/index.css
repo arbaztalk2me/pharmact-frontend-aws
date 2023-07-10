@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nvabarbg{
+    background-color: #003049;
+  }
+  
+  .p-password-input{
+    width: 300px ;
+  }
