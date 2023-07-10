@@ -21,7 +21,7 @@ const CustomerHome = () => {
         <div className="row g-0 " style={{ height: "80vh" }}>
           <div className=" mb-2 col-md-4 d-flex justify-content-center align-items-center">
             <div className="card">
-              <Card className="text-center " title="Welcome To Admin Home">
+              <Card className="text-center " title="Welcome To Customer Home">
                 <Link className="text-decoration-none">Check Profile</Link>
                 <br />
                 <Link className="text-decoration-none">View Medicines</Link>
